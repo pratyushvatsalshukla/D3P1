@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: com.stackroute.test.service.BlogServiceTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 4, Errors: 4, Skipped: 0, Time elapsed: 0.165 s <<< FAILURE! - in com.stackroute.test.service.BlogServiceTest
+givenBlogToUpdateThenShouldNotReturnUpdatedBlog  Time elapsed: 0.123 s  <<< FAILURE!
+org.mockito.exceptions.verification.WantedButNotInvoked: 
+
+Wanted but not invoked:
+blogRepository.findById(1);
+-> at com.stackroute.test.service.BlogServiceTest.givenBlogToUpdateThenShouldNotReturnUpdatedBlog(BlogServiceTest.java:116)
+Actually, there were zero interactions with this mock.
+
+	at com.stackroute.test.service.BlogServiceTest.givenBlogToUpdateThenShouldNotReturnUpdatedBlog(BlogServiceTest.java:116)
+
+givenBlogIdToDeleteThenShouldNotReturnDeletedBlog  Time elapsed: 0.004 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.stackroute.test.service.BlogServiceTest.givenBlogIdToDeleteThenShouldNotReturnDeletedBlog(BlogServiceTest.java:96)
+
+givenBlogIdThenShouldReturnRespectiveBlog  Time elapsed: 0.006 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.stackroute.test.service.BlogServiceTest.givenBlogIdThenShouldReturnRespectiveBlog(BlogServiceTest.java:78)
+
+givenBlogToUpdateThenShouldReturnUpdatedBlog  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "com.stackroute.domain.Blog.getBlogContent()" because "blog1" is null
+	at com.stackroute.test.service.BlogServiceTest.givenBlogToUpdateThenShouldReturnUpdatedBlog(BlogServiceTest.java:106)
+
+givenGetAllBlogsThenShouldReturnListOfAllBlogs  Time elapsed: 0.007 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <null> but was: <[]>
+	at com.stackroute.test.service.BlogServiceTest.givenGetAllBlogsThenShouldReturnListOfAllBlogs(BlogServiceTest.java:70)
+
+givenBlogIdToDeleteThenShouldReturnDeletedBlog  Time elapsed: 0.003 s  <<< ERROR!
+java.util.NoSuchElementException: No value present
+	at com.stackroute.test.service.BlogServiceTest.givenBlogIdToDeleteThenShouldReturnDeletedBlog(BlogServiceTest.java:86)
+
+givenBlogToSaveThenShouldReturnSavedBlog  Time elapsed: 0.003 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <com.stackroute.domain.Blog@327af731> but was: <null>
+	at com.stackroute.test.service.BlogServiceTest.givenBlogToSaveThenShouldReturnSavedBlog(BlogServiceTest.java:51)
+
+givenBlogToSaveThenShouldNotReturnSavedBlog  Time elapsed: 0.005 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: Expected java.lang.RuntimeException to be thrown, but nothing was thrown.
+	at com.stackroute.test.service.BlogServiceTest.givenBlogToSaveThenShouldNotReturnSavedBlog(BlogServiceTest.java:58)
+

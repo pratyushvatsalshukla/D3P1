@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: com.stackroute.test.controller.BlogControllerTest
+-------------------------------------------------------------------------------
+Tests run: 5, Failures: 0, Errors: 5, Skipped: 0, Time elapsed: 1.205 s <<< FAILURE! - in com.stackroute.test.controller.BlogControllerTest
+givenBlogIdToDeleteThenShouldNotReturnDeletedBlog  Time elapsed: 1.174 s  <<< ERROR!
+java.lang.NoClassDefFoundError: jakarta/servlet/ServletException
+	at com.stackroute.test.controller.BlogControllerTest.setUp(BlogControllerTest.java:53)
+Caused by: java.lang.ClassNotFoundException: jakarta.servlet.ServletException
+	at com.stackroute.test.controller.BlogControllerTest.setUp(BlogControllerTest.java:53)
+
+givenBlogIdThenShouldReturnRespectiveBlog  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NoClassDefFoundError: jakarta/servlet/ServletException
+	at com.stackroute.test.controller.BlogControllerTest.setUp(BlogControllerTest.java:53)
+Caused by: java.lang.ClassNotFoundException: jakarta.servlet.ServletException
+	at com.stackroute.test.controller.BlogControllerTest.setUp(BlogControllerTest.java:53)
+
+givenBlogToUpdateThenShouldReturnUpdatedBlog  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NoClassDefFoundError: jakarta/servlet/ServletException
+	at com.stackroute.test.controller.BlogControllerTest.setUp(BlogControllerTest.java:53)
+Caused by: java.lang.ClassNotFoundException: jakarta.servlet.ServletException
+	at com.stackroute.test.controller.BlogControllerTest.setUp(BlogControllerTest.java:53)
+
+givenGetAllBlogsThenShouldReturnListOfAllBlogs  Time elapsed: 0.006 s  <<< ERROR!
+java.lang.NoClassDefFoundError: jakarta/servlet/ServletException
+	at com.stackroute.test.controller.BlogControllerTest.setUp(BlogControllerTest.java:53)
+Caused by: java.lang.ClassNotFoundException: jakarta.servlet.ServletException
+	at com.stackroute.test.controller.BlogControllerTest.setUp(BlogControllerTest.java:53)
+
+givenBlogToSaveThenShouldReturnSavedBlog  Time elapsed: 0.007 s  <<< ERROR!
+java.lang.NoClassDefFoundError: jakarta/servlet/ServletException
+	at com.stackroute.test.controller.BlogControllerTest.setUp(BlogControllerTest.java:53)
+Caused by: java.lang.ClassNotFoundException: jakarta.servlet.ServletException
+	at com.stackroute.test.controller.BlogControllerTest.setUp(BlogControllerTest.java:53)
+

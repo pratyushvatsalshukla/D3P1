@@ -1,0 +1,6 @@
+com\stackroute\controller\BlogController.class
+com\stackroute\domain\Blog.class
+com\stackroute\BlogServiceApplication.class
+com\stackroute\service\BlogService.class
+com\stackroute\repository\BlogRepository.class
+com\stackroute\service\BlogServiceImpl.class
